@@ -245,22 +245,163 @@
           <div class="Connection-context-video">
             <h1>СЮЖЕТ КАНАЛА С УЧАСТИЕМ НАШЕГО ГЕНЕРАЛЬНОГО
               ДИРЕКТОРА - <span>МУХИНА ПАВЛА И МОСЖИЛИНСПЕКЦИИ</span></h1>
-            <video controls>
-              <source type="video/mp4" src="./assets/video/news.mp4">
-            </video>
+            <div class="video-wrapper">
+              <video >
+                <source type="video/mp4" src="./assets/video/news.mp4">
+              </video>
+              <button class="video-btn">▶</button>
+            </div>
           </div>
           <div class="Connection-context-video">
             <h1>НАШ СОТРУДНИК В ВИДЕОРОЛИКЕ <br>
               <span>ОФИЦИАЛЬНОГО КАНАЛА БТИ</span>
             </h1>
-            <video controls>
-              <source  type="video/mp4" src="./assets/video/news.mp4">
-            </video>
+            <div class="video-wrapper">
+              <video >
+                <source type="video/mp4" src="./assets/video/news.mp4">
+              </video>
+              <button class="video-btn">▶</button>
+            </div>
           </div>
         </div>
-        <video class="Connection-Video" controls>
-          <source type="video/mp4" src="./assets/video/news.mp4">
-        </video>
+        <div class="video-wrapper">
+          <video >
+            <source type="video/mp4" src="./assets/video/news.mp4">
+          </video>
+          <button class="video-btn">▶</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="OurWorks_Section">
+      <a href="">Реальные кейсы</a>
+      <div class="OurWorks-Context">
+        <p>НАШИ РАБОТЫ</p>
+        <div class="ourWorks-content">
+          <h3 style="color: var(--black-text);">Мы уже согласовывали вашу перепланировку</h3>
+          <div class="ourworks-btns">
+            <button>
+              <img src="./assets/icons/ic_round.svg" alt="">
+              Квартиры
+            </button>
+            <button>
+              <img src="./assets/icons/fluent.svg" alt="">
+              Нежилые помещения
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="swiper Reviews">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide review">
+            <img src="img1.jpg" alt="">
+            <div class="review-context">
+              <p>Пример согласования планируемой перепланировки под ключ в...</p>
+              <button>
+                Узнать подробнее
+                <img src="./assets/icons/solar_arrow-left-broken.svg" alt="">
+              </button>
+            </div>
+            <button class="agreed">согласовано</button>
+          </div>
+
+          <div class="swiper-slide review">
+            <img src="img2.jpg" alt="">
+            <div class="review-context">
+              <p>Пример согласования перепланировки нашей компанией в...</p>
+              <button>
+                Хочу также
+                <img src="./assets/icons/solar_arrow-left-broken.svg" alt="">
+              </button>
+            </div>
+            <button class="agreed">согласовано</button>
+          </div>
+
+          <div class="swiper-slide review">
+            <img src="img3.jpg" alt="">
+            <div class="review-context">
+              <p>Сложный случай согласования проема в несущей стене панельного...</p>
+              <button>
+                Раскрыть кейс
+                <img src="./assets/icons/solar_arrow-left-broken.svg" alt="">
+              </button>
+            </div>
+            <button class="agreed">согласовано</button>
+          </div>
+
+          <div class="swiper-slide review">
+            <img src="img4.jpg" alt="">
+            <div class="review-context">
+              <p>Пример согласования объединения двух квартир в ЗАО</p>
+              <button>
+                Узнать подробнее
+                <img src="./assets/icons/solar_arrow-left-broken.svg" alt="">
+              </button>
+            </div>
+            <button class="agreed">согласовано</button>
+          </div>
+
+          <div class="swiper-slide review">
+            <img src="img1.jpg" alt="">
+            <div class="review-context">
+              <p>Пример согласования планируемой перепланировки под ключ в...</p>
+              <button>
+                Узнать подробнее
+                <img src="./assets/icons/solar_arrow-left-broken.svg" alt="">
+              </button>
+            </div>
+            <button class="agreed">согласовано</button>
+          </div>
+
+          <div class="swiper-slide review">
+            <img src="img2.jpg" alt="">
+            <div class="review-context">
+              <p>Пример согласования перепланировки нашей компанией в...</p>
+              <button>
+                Хочу также
+                <img src="./assets/icons/solar_arrow-left-broken.svg" alt="">
+              </button>
+            </div>
+            <button class="agreed">согласовано</button>
+          </div>
+
+          <div class="swiper-slide review">
+            <img src="img3.jpg" alt="">
+            <div class="review-context">
+              <p>Сложный случай согласования проема в несущей стене панельного...</p>
+              <button>
+                Раскрыть кейс
+                <img src="./assets/icons/solar_arrow-left-broken.svg" alt="">
+              </button>
+            </div>
+            <button class="agreed">согласовано</button>
+          </div>
+
+          <div class="swiper-slide review">
+            <img src="img4.jpg" alt="">
+            <div class="review-context">
+              <p>Пример согласования объединения двух квартир в ЗАО</p>
+              <button>
+                Узнать подробнее
+                <img src="./assets/icons/solar_arrow-left-broken.svg" alt="">
+              </button>
+            </div>
+            <button class="agreed">согласовано</button>
+          </div>
+
+        </div>
+
+
+        <div class="reviews-nav">
+          <button class="reviews-prev">
+            <img style="transform: rotate(180deg);" src="./assets/icons/solar_arrow-left-broken.svg" alt="">
+          </button>
+
+          <button class="reviews-next">
+            <img src="./assets/icons/solar_arrow-left-broken.svg" alt="">
+          </button>
+        </div>
       </div>
     </section>
   </main>
@@ -270,6 +411,7 @@
 
   <!-- Swiper Js -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <script src="./assets/js/main.js"></script>
 </body>
 
 </html>
