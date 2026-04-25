@@ -804,3 +804,236 @@ body {
   opacity: 0.5;
   cursor: not-allowed;
 }
+
+
+
+.CustomerReviews-Section {
+  max-width: 1400px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+.CustomerReviews-Section a {
+  width: 171px;
+  height: 37px;
+  border-radius: 300px;
+  border: 1px solid var(--white);
+  font-family: var(--font-roboto);
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  line-height: 120%;
+  letter-spacing: -3%;
+  color: var(--white-text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  gap: 20px;
+}
+
+
+.big-card {
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  background: linear-gradient(135deg, #0d4d7a, #0a6bb8);
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.big-card h2 {
+  font-family: var(--font-gilroy);
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 110.00000000000001%;
+  letter-spacing: -5%;
+}
+
+.big-card p {
+  font-family: var(--font-onest);
+  font-weight: 300;
+  font-style: Regular;
+  font-size: 14px;
+  line-height: 120%;
+  letter-spacing: -2%;
+
+}
+
+
+.reviewsSwiper {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  height: 312px;
+  gap: 20px;
+}
+
+
+
+.card {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background: var(--white-bg);
+}
+
+.card div {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 300px;
+  padding: 10px 15px;
+  color: var(--primary);
+  background: var(--white);
+  bottom: 15px;
+  left: 15px;
+  font-family: var(--font-onest);
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  line-height: 120%;
+  letter-spacing: -3%;
+}
+
+.OurResults-Section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 130px;
+  max-width: 1360px;
+  height: 450px;
+  border-radius: 32px;
+  margin: 0 auto;
+  background: radial-gradient(101.36% 278.75% at -1.36% 50%, #02253E 0%, #0281DD 75%, #0069B4 100%);
+}
+
+.OurResults-context {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.OurResults-context h1 {
+  font-family: var(--font-gilroy);
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 110.00000000000001%;
+  letter-spacing: -5%;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.OurResults-context p {
+  font-family: var(--font-onest);
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 20px;
+  line-height: 130%;
+  letter-spacing: -2%;
+  color: var(--white);
+}
+
+.OurResults-context button {
+  width: 324px;
+  height: 50px;
+  border-radius: 8px;
+  border: 1px solid #FFFFFF59;
+  background: var(--white);
+  font-family: var(--font-onest);
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 16px;
+  line-height: 120%;
+  letter-spacing: -3%;
+  color: var(--black-text-light);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.OurResults-context img {
+  width: 40px;
+  height: 40px;
+  background: var(--primary);
+  border-radius: 4px;
+  padding: 7.5px;
+}
+
+.OurResults-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.review-result {
+  position: relative;
+  max-width: 100%;
+  background: #FFFFFF17;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.review-result .result {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 5px;
+  padding-right: 20px;
+  border-radius: 300px;
+  background: #3088C9;
+  border: 1px solid #FFFFFF1A;
+}
+
+.review-result .result img {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+}
+
+.review-result .result h1 {
+  font-family: var(--font-onest);
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 20px;
+  line-height: 130%;
+  letter-spacing: -2%;
+  color: var(--white);
+}
+
+.review-result p {
+  font-family: var(--font-onest);
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 16px;
+  line-height: 130%;
+  letter-spacing: -2%;
+  color: #FFFFFFCC;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.deg-left {
+  transform: rotate(-2deg);
+}
+
+.deg-right {
+  transform: rotate(2deg);
+}
