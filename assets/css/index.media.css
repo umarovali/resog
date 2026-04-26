@@ -273,7 +273,7 @@
   .contaction_swiper_control {
     position: relative;
   }
-  /* Контейнер управления */
+
   .connection_control {
     margin-top: 13px;
     display: flex;
@@ -283,33 +283,29 @@
     gap: 20px;
   }
 
-  /* Контейнер пагинации */
   .connection-pagination.swiper-pagination-bullets {
     position: relative !important;
     display: flex !important;
-    flex: 1 !important; /* Занимает всё место слева от кнопок */
-    gap: 15px !important; /* Расстояние (пропуск) между линиями */
+    flex: 1 !important;
+    gap: 15px !important;
     bottom: 0 !important;
     margin: 0 !important;
     width: auto !important;
   }
 
-  /* Сами линии */
   .connection-pagination .swiper-pagination-bullet {
-    flex: 1 !important; /* Каждая линия растягивается максимально */
+    flex: 1 !important;
     height: 2px !important;
     border-radius: 0 !important;
-    background: #e0e0e0 !important; /* Светлая линия */
+    background: rgba(34, 34, 34, 0.2) !important;
     opacity: 1 !important;
 
-    /* Сбрасываем стандартную ширину Swiper (8px) */
     width: auto !important;
     margin: 0 !important;
   }
 
-  /* Активная линия */
   .connection-pagination .swiper-pagination-bullet-active {
-    background: #1a1a1a !important; /* Темная линия */
+    background: #222222 !important;
   }
 
   .connection_swiper_btns {
@@ -360,4 +356,57 @@
     background: #2222221a;
     pointer-events: none;
   }
+
+  /* works */
+
+  .works {
+    margin-top: 80px;
+  }
+
+  .works_content {
+    margin-top: 25px;
+  }
+
+  .works_article {
+    align-items: start;
+    gap: 5px;
+  }
+
+  .work_suptitle {
+    font-size: 14px;
+  }
+
+  .works_content {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .works_btns {
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    gap: 10px;
+  }
+
+  .works_btn_primary,
+  .works_btn_white {
+    width: auto;
+  }
+
+  /* review_swiper */
+  .review {
+    max-width: 266px;
+    height: 353px;
+    padding: 15px;
+  }
+
+  .review img {
+    height: 181px;
+  }
+
+  .rview_control {
+    display: none;
+  }
+
 }

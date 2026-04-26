@@ -61,45 +61,48 @@ const connectionSwiper = new Swiper('.connection-swiper', {
 
   breakpoints: {
     0: {
-      enabled: true, 
+      enabled: true,
     },
     400: {
-      enabled: false, 
+      enabled: false,
     }
   }
 });
 
-// const swiper = new Swiper('.Reviews', {
-//   slidesPerView: 4,
-//   spaceBetween: 20,
-//   loop: true,
+const swiper = new Swiper('.review_swiper', {
+  slidesPerView: 'auto',
+  slidesPerGroup: 1,
+  loop: false,
+  spaceBetween: 20,
+  observer: true,
+  observeParents: true,
 
-//   navigation: {
-//     nextEl: '.next-review',
-//     prevEl: '.prev-review',
-//   },
+  pagination: {
+    el: '.reviews-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.reiew_swiper_btns .swiper-button-next',
+    prevEl: '.reiew_swiper_btns .swiper-button-prev',
+  },
 
-//   pagination: {
-//     el: '.swiper-pagination',
-//     clickable: true,
-//   },
-
-//   breakpoints: {
-//     320: {
-//       slidesPerView: 1.2,
-//     },
-//     768: {
-//       slidesPerView: 2,
-//     },
-//     1024: {
-//       slidesPerView: 3,
-//     },
-//     1400: {
-//       slidesPerView: 4,
-//     }
-//   }
-// });
-
+  breakpoints: {
+    0: {
+      navigation: false,
+      pagination: false,
+    },
+    401: {
+      navigation: {
+        nextEl: '.reiew_swiper_btns .swiper-button-next',
+        prevEl: '.reiew_swiper_btns .swiper-button-prev',
+      },
+      pagination: {
+        el: '.reviews-pagination',
+        clickable: true,
+      },
+    }
+  }
+});
 
 // new Swiper(".reviewsSwiper", {
 //   slidesPerView: 4,
