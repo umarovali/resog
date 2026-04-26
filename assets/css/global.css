@@ -25,12 +25,18 @@ a {
 }
 
 button {
-    border: none;
-    cursor: pointer;
+  border: none;
+  cursor: pointer;
 }
 
 select,
 input,
 textarea {
   outline: none;
+}
+
+@media (max-width: 400px) {
+  .container {
+    padding: 0 20px;
+  }
 }

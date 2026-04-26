@@ -1,0 +1,359 @@
+@media (max-width: 400px) {
+  /* navabr */
+
+  .navbar_wrapper {
+    justify-content: center;
+  }
+
+  .navbar_text {
+    font-size: 14px;
+  }
+
+  .navbar_list {
+    display: none;
+  }
+
+  /* header */
+
+  header {
+    background: var(--white-bg);
+    padding: 10px 0 18px;
+    border-radius: 0px 0px 32px 32px;
+  }
+
+  .header_wrapper_menu {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .header_wrapper {
+    width: 100%;
+    margin-top: 0px;
+    height: 52px;
+  }
+
+  .header_list,
+  .header_line,
+  .header_phone_message {
+    display: none;
+  }
+
+  .header_logo {
+    width: 68px;
+    height: 35px;
+  }
+
+  .header_social a {
+    width: 38px;
+    height: 38px;
+    background: var(--primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header_social a img {
+    width: 21px;
+    height: 21px;
+    object-fit: cover;
+  }
+
+  /* header_meda_info */
+
+  .header_meda_info {
+    display: flex;
+  }
+
+  /* menu burger */
+
+  .menu_burger {
+    display: flex;
+    min-width: 52px;
+  }
+
+  /* hero */
+
+  .hero {
+    background-size: cover;
+    height: 653px;
+    background-position: -870px 0px;
+    position: relative;
+    bottom: 43px;
+    z-index: -10;
+    padding-top: 83px;
+    margin-bottom: 210px;
+  }
+
+  .hero_wrapper {
+    height: 653px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .hero_left {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: start;
+    gap: 15px;
+  }
+
+  .hero_list {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+  }
+
+  .hero_list li {
+    width: 185px;
+    flex-direction: row;
+    gap: 13px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+  .hero_list_text {
+    width: 100%;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: start;
+  }
+
+  .hero_list li img {
+    width: 12px;
+    height: 12px;
+    object-fit: contain;
+  }
+
+  .hero_title {
+    width: 100%;
+    color: var(--white);
+    font-size: 28px;
+    font-weight: 400;
+  }
+
+  .hero_subtitle {
+    width: 190px;
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .hero_form_bg {
+    position: absolute;
+    left: 0px;
+    bottom: -130px;
+    width: 100%;
+    height: 386px;
+  }
+
+  .hero_form_title {
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  .hero_form_inputs {
+    padding-top: 15px;
+    gap: 10px;
+  }
+
+  .hero_form_text_warning {
+    padding-top: 10px;
+    font-size: 12px;
+  }
+
+  /* map */
+
+  .map {
+    margin-top: 0px;
+  }
+
+  .map_content {
+    gap: 35px;
+  }
+
+  .map_content_btn {
+    width: 122px;
+    height: 32px;
+    font-size: 12px;
+  }
+
+  .map_content_title {
+    width: 100%;
+    font-size: 20px;
+  }
+
+  .swiper_slide_comment {
+    max-width: 75%;
+    min-height: 100px;
+  }
+
+  .map_comment_num {
+    font-size: 8px;
+  }
+
+  .map_comment_desc {
+    font-size: 12px;
+  }
+
+  .map_wrapper_swiper .swiper-button-next,
+  .map_wrapper_swiper .swiper-button-prev {
+    top: 30px;
+  }
+
+  .map_swiper_pagination {
+    position: absolute;
+    top: 0px;
+    right: 20px;
+    width: 58px;
+  }
+
+  .map_wrapper_swiper .swiper-button-disabled {
+    display: flex;
+    background-image: url("../icons/solar_arrow-white.svg") !important;
+    border: 1px solid #ffffffbf;
+    background-color: transparent;
+    pointer-events: none;
+  }
+
+  .map_iframe {
+    height: 385px;
+  }
+
+  /* connection */
+
+  .connection {
+    margin-top: 80px;
+  }
+
+  .connection_wrapper {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .connection_video_title {
+    font-size: 24px;
+  }
+
+  .connection_video {
+    width: 100%;
+    height: 660px;
+  }
+
+  .cennection_wrap_btn {
+    padding: 0 20px;
+  }
+
+  .connection-swiper {
+    overflow: hidden !important;
+  }
+
+  .connection-swiper-wrapper {
+    flex-direction: row;
+    gap: 0px;
+  }
+
+  .connection-swiper-video_bg {
+    width: 100%;
+    height: 359px !important;
+  }
+
+  .connection-swiper-video_title {
+    font-size: 16px;
+  }
+
+  .connection-swiper-video {
+    height: 261px;
+  }
+
+  .contaction_swiper_control {
+    position: relative;
+  }
+  /* Контейнер управления */
+  .connection_control {
+    margin-top: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+  }
+
+  .connection-pagination.swiper-pagination-bullets {
+    position: relative !important;
+    display: flex !important;
+    flex: 1 !important;
+    gap: 15px !important;
+    bottom: 0 !important;
+    margin: 0 !important;
+    width: auto !important;
+  }
+
+  .connection-pagination .swiper-pagination-bullet {
+    flex: 1 !important;
+    height: 2px !important;
+    border-radius: 0 !important;
+    background: #e0e0e0 !important;
+    opacity: 1 !important;
+
+    width: auto !important;
+    margin: 0 !important;
+  }
+
+  .connection-pagination .swiper-pagination-bullet-active {
+    background: #1a1a1a !important;
+  }
+
+  .connection_swiper_btns {
+    display: flex;
+    gap: 12px;
+    flex-shrink: 0;
+  }
+
+  .contaction_swiper_control .swiper-button-next,
+  .contaction_swiper_control .swiper-button-prev {
+    position: static !important;
+    width: 30px;
+    height: 30px;
+    top: 110px;
+    background: var(--primary);
+    margin: 0 !important;
+    cursor: pointer;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 16px;
+    background-image: url("../icons/solar_arrow-white.svg");
+    transition:
+      background-image 0.3s ease,
+      border 0.3s ease,
+      opacity 0.3s ease;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .contaction_swiper_control .swiper-button-prev {
+    transform: rotate(180deg);
+  }
+
+  .contaction_swiper_control .swiper-button-disabled {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1 !important;
+    background-repeat: no-repeat !important;
+    background-image: url("../icons/solar_arrow-gray.svg") !important;
+    background-position: center !important;
+    background-size: 16px !important;
+
+    border: 1px solid #ffffffbf;
+    background: #2222221a;
+    pointer-events: none;
+  }
+}
