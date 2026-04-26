@@ -41,37 +41,33 @@ videoContainers.forEach(container => {
   });
 });
 
-let connectionSwiper;
+const connectionSwiper = new Swiper('.connection-swiper', {
+  slidesPerView: 1,
+  slidesPerGroup: 1,
 
-function initSwiper() {
-  const screenWidth = window.innerWidth;
+  loop: false,
 
-  if (screenWidth <= 400 && !connectionSwiper) {
-    connectionSwiper = new Swiper('.connection-swiper', {
-      slidesPerView: 1,
-      slidesPerGroup: 1,
-      loop: false,
-      observer: true,
-      observeParents: true,
-      pagination: {
-        el: '.connection-pagination',
-        clickable: true,
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
+  observer: true,
+  observeParents: true,
+
+  pagination: {
+    el: '.connection-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  breakpoints: {
+    0: {
+      enabled: true, 
+    },
+    400: {
+      enabled: false, 
+    }
   }
-  else if (screenWidth > 400 && connectionSwiper) {
-    connectionSwiper.destroy(true, true);
-    connectionSwiper = undefined;
-  }
-}
-
-initSwiper();
-
-window.addEventListener('resize', initSwiper);
+});
 
 // const swiper = new Swiper('.Reviews', {
 //   slidesPerView: 4,

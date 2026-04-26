@@ -283,29 +283,33 @@
     gap: 20px;
   }
 
+  /* Контейнер пагинации */
   .connection-pagination.swiper-pagination-bullets {
     position: relative !important;
     display: flex !important;
-    flex: 1 !important;
-    gap: 15px !important;
+    flex: 1 !important; /* Занимает всё место слева от кнопок */
+    gap: 15px !important; /* Расстояние (пропуск) между линиями */
     bottom: 0 !important;
     margin: 0 !important;
     width: auto !important;
   }
 
+  /* Сами линии */
   .connection-pagination .swiper-pagination-bullet {
-    flex: 1 !important;
+    flex: 1 !important; /* Каждая линия растягивается максимально */
     height: 2px !important;
     border-radius: 0 !important;
-    background: #e0e0e0 !important;
+    background: #e0e0e0 !important; /* Светлая линия */
     opacity: 1 !important;
 
+    /* Сбрасываем стандартную ширину Swiper (8px) */
     width: auto !important;
     margin: 0 !important;
   }
 
+  /* Активная линия */
   .connection-pagination .swiper-pagination-bullet-active {
-    background: #1a1a1a !important;
+    background: #1a1a1a !important; /* Темная линия */
   }
 
   .connection_swiper_btns {
