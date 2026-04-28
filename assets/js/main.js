@@ -1,3 +1,47 @@
+document.addEventListener('DOMContentLoaded', () => {
+  const burger = document.querySelector('.menu_burger');
+  const closeBtn = document.querySelector('.menu_close_btn');
+  const menuBg = document.querySelector('.menu_bg');
+  const headerWrapper = document.querySelector('.header_wrapper');
+
+  const menuItems = document.querySelectorAll('.header_list_item');
+
+  menuItems.forEach(item => {
+    const dropdown = item.querySelector('.header_drow_down');
+    
+    if (dropdown) {
+      item.addEventListener('click', (e) => {
+        if (e.target.closest('.header_drow_down')) return;
+
+        item.classList.toggle('open');
+      });
+    }
+  });
+
+  burger.addEventListener('click', () => {
+    menuBg.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  });
+
+  const closeMenu = () => {
+    menuBg.classList.remove('active');
+    headerWrapper.classList.remove('header_wrapper_menu');
+    document.body.style.overflow = '';
+    
+    menuItems.forEach(i => i.classList.remove('open'));
+  };
+
+  closeBtn.addEventListener('click', closeMenu);
+
+  menuBg.addEventListener('click', (e) => {
+    if (e.target === menuBg) {
+      closeMenu();
+    }
+  });
+});
+
+
+
 const muswiper = new Swiper(".swiper_comment", {
   slidesPerView: "auto",
   spaceBetween: 20,
