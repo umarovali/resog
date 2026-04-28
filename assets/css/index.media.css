@@ -435,4 +435,16 @@
     height: 40px;
     object-fit: contain;
   }
+
+  /* comment */
+
+  .comments_more_btn1{
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+  }
+
+  .comments_more_btn{
+    display: none;
+  }
 }

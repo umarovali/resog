@@ -286,12 +286,10 @@ body {
   padding: 15px 35px 15px 10px;
   top: 70px;
   left: 0;
-  background: radial-gradient(
-    96.24% 563.11% at 1.11% 0%,
-    #002f51 0%,
-    #0178cf 75%,
-    #0061a7 100%
-  );
+  background: radial-gradient(96.24% 563.11% at 1.11% 0%,
+      #002f51 0%,
+      #0178cf 75%,
+      #0061a7 100%);
   border-radius: 16px;
   display: flex;
   flex-direction: column;
@@ -373,12 +371,10 @@ body {
   width: 52px;
   height: 52px;
   border-radius: 50%;
-  background: radial-gradient(
-    192.84% 111.4% at 12% 24%,
-    rgba(0, 47, 81, 1),
-    rgba(1.27, 120.43, 206.72, 1),
-    rgba(0, 96.67, 166.67, 1)
-  );
+  background: radial-gradient(192.84% 111.4% at 12% 24%,
+      rgba(0, 47, 81, 1),
+      rgba(1.27, 120.43, 206.72, 1),
+      rgba(0, 96.67, 166.67, 1));
   display: flex;
   align-items: center;
   justify-content: center;
@@ -675,12 +671,10 @@ body {
   justify-content: start;
   padding: 20px;
   border-radius: 32px;
-  background: radial-gradient(
-    79.36% 147.96% at 11.58% 17.75%,
-    #002f51 0%,
-    #0178cf 75.56%,
-    #0061a7 100%
-  );
+  background: radial-gradient(79.36% 147.96% at 11.58% 17.75%,
+      #002f51 0%,
+      #0178cf 75.56%,
+      #0061a7 100%);
 }
 
 .map_content {
@@ -1151,7 +1145,7 @@ body {
 
 .comments_df {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   margin-top: 45px;
 }
@@ -1177,13 +1171,13 @@ body {
   color: #fff;
 }
 
-.comments_wrapperr .swiper-slide{
+.comments_wrapperr .swiper-slide {
   max-width: 300px;
   height: auto;
   width: 100%;
 }
 
-.swiper-wrapper{
+.swiper-wrapper {
   display: flex;
   gap: 30px;
 }
@@ -1204,18 +1198,36 @@ body {
   z-index: 10;
 }
 
+.comments_more_btn1 {
+  margin-top: 30px;
+  margin-left: 12px;
+  align-items: start;
+  border-radius: 8px;
+  width: 360px;
+  height: 50px;
+  right: 20px;
+  color:  rgba(34, 34, 34, 1);
+  font-style: Medium;
+  font-family: var(--font-onest);
+  font-size: 16px;
+  font-weight: 500;
+  display: none;
+  line-height: 120%;
+  background: url(../icons/banner.svg);
+}
+
 .comments_more_btn:hover {
   background: #1c60b3;
 }
 
-.swiper-button-lock{
-  display: flex!important;
+.swiper-button-lock {
+  display: flex !important;
 }
 
-.blue_swiper_btns{
+.blue_swiper_btns {
   display: flex;
 }
 
-.swiper-button-prev{
+.swiper-button-prev {
   display: flex;
 }
