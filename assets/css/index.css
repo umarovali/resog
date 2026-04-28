@@ -1231,3 +1231,68 @@ body {
 .swiper-button-prev {
   display: flex;
 }
+
+/* scrool */
+
+/* Scroll Section */
+
+.Scroll-Section {
+  margin: 150px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Scroll-context {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 45px;
+  margin-bottom: 20px;
+}
+
+
+.Scroll-Section h2 {
+  font-family: var(--font-gilroy);
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 110.00000000000001%;
+  letter-spacing: -5%;
+  color: var(--primary);
+}
+
+.scroll-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+.scroll-content {
+  display: flex;
+  justify-content: center;
+  width: max-content;
+  padding: 10px;
+}
+
+.scrolling-left {
+  animation: scroll-left 15s linear infinite;
+}
+
+.scrolling-right {
+  animation: scroll-right 15s linear infinite;
+}
+
+.scroll-group {
+  justify-content: center;
+  display: flex;
+}
+
+.scrolling-item {
+  min-width: 308px;
+  height: 150px;
+  border-radius: 16px;
+  border: 1px solid #22222233;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 40px;
+}

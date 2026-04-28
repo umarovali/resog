@@ -117,3 +117,48 @@ const swiperrr = new Swiper('.comments_wrapperr', {
     prevEl: '.blue_swiper_btns-comment .swiper-button-prev',
   },
 });
+
+
+const leftContainer = document.querySelector(".scrolling-left");
+const rightContainer = document.querySelector(".scrolling-right");
+
+let leftScroll = 0;
+let rightScroll = 0;
+
+let speed = 0.5;
+
+function updateSpeed() {
+  const w = window.innerWidth;
+
+  if (w < 576) {
+    speed = 0.2; 
+  } else if (w < 1024) {
+    speed = 0.35; 
+  } else {
+    speed = 0.5; 
+  }
+}
+
+window.addEventListener("resize", updateSpeed);
+updateSpeed();
+
+function autoScroll() {
+
+  leftScroll += speed;
+  leftContainer.style.transform = `translateX(-${leftScroll}px)`;
+
+  if (leftScroll >= leftContainer.scrollWidth / 2) {
+    leftScroll = 0;
+  }
+
+  rightScroll += speed;
+  rightContainer.style.transform = `translateX(${rightScroll}px)`;
+
+  if (rightScroll >= rightContainer.scrollWidth / 2) {
+    rightScroll = 0;
+  }
+
+  requestAnimationFrame(autoScroll);
+}
+
+autoScroll();
