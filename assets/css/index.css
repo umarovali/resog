@@ -394,6 +394,55 @@ body {
   border-radius: 2px;
 }
 
+/* menu_ */
+
+.menu_contacts_close {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu_contact {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.menu_contact a {
+  width: 52px;
+  height: 52px;
+  border: 1px solid #ffffff80;
+  border-radius: 300px;
+  background: #ffffff0d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu_contact a img {
+  width: 28px;
+  height: 28px;
+  object-fit: cover;
+}
+
+.menu_line {
+  width: 1px;
+  height: 52px;
+  background: #ffffff40;
+}
+
+.menu_close_btn {
+  width: 52px;
+  height: 52px;
+  background: var(--white);
+  color: var(--primary);
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
 /* hero */
 
 .hero {
