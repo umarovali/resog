@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap");
 /* 300 400 500 */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/* 500 */
 @font-face {
   font-family: "Gilroy";
   src: url("../fonts/Gilroy-Regular.woff2") format("woff2");
