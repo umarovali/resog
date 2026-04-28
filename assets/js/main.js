@@ -162,3 +162,47 @@ function autoScroll() {
 }
 
 autoScroll();
+
+
+
+
+new Swiper('.team-swiper', {
+  slidesPerView: 'auto',
+  spaceBetween: 15,
+  loop: true,
+});
+
+new Swiper('.specials-swiper', {
+  slidesPerView: 'auto', 
+  spaceBetween: 20,
+  centeredSlides: false,
+  
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+});
+
+
+const admissionSwiper = new Swiper('.admission-swiper', {
+  slidesPerView: 'auto',
+  centeredSlides: true,
+  loop: true,
+  spaceBetween: 20,
+  loopedSlides: 5, // Чтобы loop не ломался при авто-ширине
+
+  navigation: {
+    nextEl: '.blue_swiper_btns .swiper-button-next',
+    prevEl: '.blue_swiper_btns .swiper-button-prev',
+  },
+  pagination: {
+    el: '.blue_swiper_btns .swiper-pagination',
+    clickable: true,
+  },
+});
