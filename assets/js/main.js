@@ -5,8 +5,8 @@ const muswiper = new Swiper(".swiper_comment", {
   grabCursor: true,
 
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".map_swiper_pagination .swiper-button-next",
+    prevEl: ".map_swiper_pagination .swiper-button-prev",
   },
 
   slidesPerGroup: 1,
@@ -55,8 +55,8 @@ const connectionSwiper = new Swiper('.connection-swiper', {
     clickable: true,
   },
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.connection_swiper_btns .swiper-button-next',
+    prevEl: '.connection_swiper_btns .swiper-button-prev',
   },
 
   breakpoints: {
@@ -78,12 +78,12 @@ const swiper = new Swiper('.review_swiper', {
   observeParents: true,
 
   pagination: {
-    el: '.reviews-pagination',
+    el: '.blue-pagination_review',
     clickable: true,
   },
   navigation: {
-    nextEl: '.reiew_swiper_btns .swiper-button-next',
-    prevEl: '.reiew_swiper_btns .swiper-button-prev',
+    nextEl: '.blue_swiper_btns_review .swiper-button-next',
+    prevEl: '.blue_swiper_btns_review .swiper-button-prev',
   },
 
   breakpoints: {
@@ -93,51 +93,29 @@ const swiper = new Swiper('.review_swiper', {
     },
     401: {
       navigation: {
-        nextEl: '.reiew_swiper_btns .swiper-button-next',
-        prevEl: '.reiew_swiper_btns .swiper-button-prev',
+        nextEl: '.blue_swiper_btns_review .swiper-button-next',
+        prevEl: '.blue_swiper_btns_review .swiper-button-prev',
       },
       pagination: {
-        el: '.reviews-pagination',
+        el: '.blue-pagination_review',
         clickable: true,
       },
     }
   }
 });
 
-// new Swiper(".reviewsSwiper", {
-//   slidesPerView: 4,
-//   spaceBetween: 20,
-//   loop: true,
 
-//   navigation: {
-//     nextEl: ".rev-next",
-//     prevEl: ".rev-prev",
-//   },
+const swiperrr = new Swiper('.comments_wrapperr', {
 
-//   breakpoints: {
-//     320: { slidesPerView: 1 },
-//     640: { slidesPerView: 2 },
-//     1024: { slidesPerView: 4 }
-//   }
-// });
+  slidesPerView: 'auto',
+  slidesPerGroup: 1,
+  loop: false,
+  spaceBetween: 20,
+  observer: true,
+  observeParents: true,
 
-
-
-
-
-// const container = document.querySelector(".scroll-content");
-
-// let scrollAmount = 0;
-
-// function autoScroll() {
-//   scrollAmount += 0.5;
-//   container.style.transform = `translateX(-${scrollAmount}px)`;
-
-//   if (scrollAmount >= container.scrollWidth / 2) {
-//     scrollAmount = 0;
-//   }
-
-//   requestAnimationFrame(autoScroll);
-// }
-
-// autoScroll();
+  navigation: {
+    nextEl: '.blue_swiper_btns-comment .swiper-button-next',
+    prevEl: '.blue_swiper_btns-comment .swiper-button-prev',
+  },
+});

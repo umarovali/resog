@@ -363,10 +363,6 @@
     margin-top: 80px;
   }
 
-  .works_content {
-    margin-top: 25px;
-  }
-
   .works_article {
     align-items: start;
     gap: 5px;
@@ -377,6 +373,8 @@
   }
 
   .works_content {
+    margin-top: 25px;
+    width: 100%;
     display: flex;
     align-items: start;
     flex-direction: column;
@@ -384,14 +382,28 @@
   }
 
   .works_btns {
+    width: 100%;
     display: grid;
     grid-template-columns: 140px 1fr;
     gap: 10px;
   }
 
+  .works_btns img {
+    width: 14px;
+    height: 14px;
+    object-fit: cover;
+  }
+
   .works_btn_primary,
   .works_btn_white {
     width: auto;
+    font-size: 14px;
+  }
+
+  .agreed {
+    width: 104px;
+    height: 24px;
+    font-size: 12px;
   }
 
   /* review_swiper */
@@ -405,8 +417,22 @@
     height: 181px;
   }
 
-  .rview_control {
-    display: none;
+  /* Scroll Section */
+  .Scroll-Section h2 {
+    font-size: 20px;
+    width: 201px;
   }
 
+  .scrolling-item {
+    min-width: 153px !important;
+    max-width: 153px !important;
+    width: 153px !important;
+    height: 70px;
+  }
+
+  .scrolling-item img {
+    width: 113px;
+    height: 40px;
+    object-fit: contain;
+  }
 }
