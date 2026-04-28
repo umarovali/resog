@@ -106,9 +106,7 @@ const swiper = new Swiper('.review_swiper', {
 
 
 const swiperrr = new Swiper('.comments_wrapperr', {
-
   slidesPerView: 'auto',
-  slidesPerGroup: 1,
   loop: false,
   spaceBetween: 20,
   observer: true,
